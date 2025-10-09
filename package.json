@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "shiki": "^3.13.0",
     "tailwindcss": "^4"
   }
 }

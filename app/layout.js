@@ -1,4 +1,6 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import PageName from "@/components/PageName";
 import Sidebar from "@/components/Sidebar";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
@@ -20,11 +22,19 @@ export default function RootLayout({ children }) {
         className={`${firaCode.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <Navbar />
+        <div className="h-screen ">
+          <Navbar />
 
-        <div className="flex max-w-6xl mx-auto">
-          <Sidebar />
-          <main className=" w-3/4  bg-slate-800">{children}</main>
+          <div>
+            <Sidebar />
+            <main className="bg-[#121212]">
+              <PageName />
+              <div className="ml-auto w-3/4 px-2 relative overflow-y-auto">
+                {children}
+              </div>
+            </main>
+          </div>
+          <Footer />
         </div>
       </body>
     </html>
