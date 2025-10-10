@@ -48,7 +48,9 @@ export default function Sidebar() {
       <div className="flex-1 flex flex-col h-full overflow-hidden">
         {/* Explorer Header */}
         <div className="flex items-center justify-between px-3 py-2 border-b border-zinc-800">
-          <p className="text-sm font-semibold tracking-tight">Explorer</p>
+          <p className="text-sm font-semibold tracking-tight truncate">
+            Explorer portfolio
+          </p>
           <div className="flex items-center gap-2">
             <button className="hover:bg-zinc-700 p-1 rounded">
               <FilePlus size={16} />

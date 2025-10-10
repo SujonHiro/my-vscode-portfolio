@@ -58,8 +58,8 @@ export default function HomeSection() {
   }, []);
 
   return (
-    <div className="p-2 bg-[#121212] border border-slate-800 rounded-2xl shadow-lg overflow-y-auto ">
-      <pre className="relative h-[300px] overflow-y-scroll text-sm rounded-xl shadow-sm font-mono  p-3">
+    <div className="p-2  bg-[#121212] border border-slate-800 rounded-2xl shadow-lg overflow-y-auto ">
+      <pre className="relative h-[300px] overflow-y-scroll text-sm rounded-xl shadow-sm font-mono p-3">
         {codeLines.map((line, index) => (
           <div
             key={index}

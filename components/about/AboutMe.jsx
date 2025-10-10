@@ -1,20 +1,20 @@
 export default function AboutMe() {
   return (
-    <article className="mt-[150px] mb-10 ">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-emerald-400 text-5xl font-bold tracking-tight">
-          Md. Sujon Howlader
+    <article className="mt-[150px] mb-20">
+      <div className="flex flex-col items-center justify-start">
+        <h1 className="text-emerald-400 text-5xl font-bold text-center tracking-tight">
+          Md.Sujon Howlader
         </h1>
         <p className="text-slate-400 text-lg mt-2 text-center">
           Software Engineer | Full Stack Developer | Tech Enthusiast
         </p>
       </div>
       <div className="mt-8 text-slate-300 max-w-3xl mx-auto px-4 space-y-4">
-        <p>
+        <p className="leading-relaxed text-center md:text-left">
           Hey! I'm a software engineer from Dhaka, Bangladesh. I primarily work
           with JavaScript / TypeScript and the React ecosystem.
         </p>
-        <p>
+        <p className="leading-relaxed text-center md:text-left">
           I'm focused on frontend development with React, but you'll also find
           me working with Node.js, MongoDB, and Express while building the
           backend for my personal projects.
@@ -23,9 +23,11 @@ export default function AboutMe() {
 
       {/* Experience */}
       <div className="mt-10 max-w-3xl mx-auto px-4 space-y-6">
-        <h2 className="text-3xl font-bold text-emerald-400 mb-4">Experience</h2>
+        <h2 className="text-3xl font-bold text-emerald-400 mb-4 text-center md:text-left">
+          Experience
+        </h2>
         <div className="bg-slate-800/40 p-6 rounded-xl shadow-md space-y-3">
-          <h3 className="text-xl font-semibold text-emerald-400">
+          <h3 className="text-xl font-semibold text-emerald-400 ">
             Full Stack Developer — The Tech Resolver
           </h3>
           <p className="text-slate-100">
@@ -41,7 +43,9 @@ export default function AboutMe() {
       </div>
       {/* Education */}
       <div className="mt-10 max-w-3xl mx-auto px-4 space-y-6">
-        <h2 className="text-3xl font-bold text-emerald-400 mb-4">Education</h2>
+        <h2 className="text-3xl font-bold text-emerald-400 mb-4 text-center md:text-left">
+          Education
+        </h2>
         <div className="bg-slate-800/40 p-6 rounded-xl shadow-md space-y-3">
           <h3 className="text-xl font-semibold text-emerald-400">
             Bachelor of Science in Computer Science

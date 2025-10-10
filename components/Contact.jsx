@@ -55,7 +55,6 @@ export default function Contact() {
           <span className="text-pink-400 mb-1 pl-8">.social &#123;</span>
         </div>
 
-        {/* Social entries start from line 2 */}
         {contactInfo.map((info, index) => (
           <div key={info.id} className="flex space-y-1.5">
             <span className="w-6 text-gray-500 select-none">{index + 2}</span>

@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className=" scroll-smooth">
       <body
         className={`${firaCode.variable} antialiased`}
         suppressHydrationWarning={true}
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             <Sidebar />
             <main className="bg-[#121212]">
               <PageName />
-              <div className="ml-auto w-3/4 px-2 relative overflow-y-auto">
+              <div className="md:ml-auto w-full md:w-3/4 px-2 relative overflow-y-auto">
                 {children}
               </div>
             </main>

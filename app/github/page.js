@@ -20,7 +20,7 @@ export default async function GithubPage() {
           Feel free to reach out to me through any of the social platforms
           below. I'm always open to new opportunities and connections.
         </p>
-        <div className="mb-10 w-3/4">
+        <div className="mb-10 w-full md:w-3/4">
           <Github profile={profile} />
         </div>
         <h1 className="text-2xl tracking-tight text-emerald-400 ">

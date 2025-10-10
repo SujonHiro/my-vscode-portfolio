@@ -49,7 +49,7 @@ export default function Navbar() {
 
       {/* 🔹 Middle: Search / Title */}
       <div className="flex-1 flex justify-center px-4">
-        <button className="w-full md:w-full lg:w-2/3 border border-slate-700 bg-[#1a1a1a] px-3 py-1.5 rounded-md text-sm text-slate-400 flex items-center gap-2 hover:border-slate-500 hover:text-slate-200 transition">
+        <button className="w-full md:w-full lg:w-2/3 border  border-slate-700 bg-[#1a1a1a] px-3 py-1.5 rounded-md text-xs md:text-sm text-slate-400 flex items-center gap-2 hover:border-slate-500 hover:text-slate-200 transition">
           <SearchIcon size={16} />
           Sujon Howlader — Visual Studio Code
         </button>
