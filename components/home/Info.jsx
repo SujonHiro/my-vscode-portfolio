@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 
 export default function Info() {
   return (
@@ -16,9 +17,12 @@ export default function Info() {
           My focus is on clean, maintainable code and delivering seamless,
           intuitive user experiences.
         </p>
-        <button className="inline-flex bg-emerald-900/10 border border-emerald-400 gap-2 font-bold px-4 py-2 mt-2 rounded-md text-emerald-400 hover:bg-emerald-900/20 transition duration-200 items-center">
+        <Link
+          href="/projects"
+          className="inline-flex bg-emerald-900/10 border border-emerald-400 gap-2 font-bold px-4 py-2 mt-2 rounded-md text-emerald-400 hover:bg-emerald-900/20 transition duration-200 items-center"
+        >
           View Projects <ArrowRightIcon />
-        </button>
+        </Link>
       </div>
     </>
   );
