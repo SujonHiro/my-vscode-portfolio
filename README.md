@@ -1,3 +1,43 @@
+# VSCode-Style Portfolio
+
+I have built a **VSCode-themed portfolio** using **Next.js** and **Tailwind CSS**.
+
+## 🔹 Features
+
+- Portfolio design inspired by VSCode's look and feel.
+- **Custom syntax highlighting** implemented using a **simple JSON-based approach**.
+- Fully responsive and modern UI.
+- Clean styling with Tailwind CSS.
+- Deployed on Vercel for easy access.
+
+## 🚀 Tech Stack
+
+- **Frontend:** Next.js
+- **Styling:** Tailwind CSS
+- **Custom Syntax Highlighting:** JSON-based approach
+- **Deployment:** Vercel
+
+## 🌐 Live Demo
+
+[View Live Portfolio](https://your-vercel-link.vercel.app)
+
+## 📂 Project Structure
+
+- `pages/` – Next.js pages
+- `components/` – Reusable React components
+- `styles/` – Tailwind CSS styling
+- `syntax/` – JSON files for custom syntax highlighting
+
+## 💡 Notes
+
+- VSCode-inspired design for a developer-friendly feel.
+- Syntax highlighting is fully powered by simple JSON files.
+- Ready to deploy on Vercel or any other platform.
+
+---
+
+Made with ❤️ using **Next.js** and **Tailwind CSS**
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
