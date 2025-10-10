@@ -5,7 +5,7 @@ const codeLines = [
   { code: "const HomePage = () => {", color: "pink" },
   { code: "  const [isLoaded, setIsLoaded] = useState(true);", color: "cyan" },
   { code: "  const developerInfo = {", color: "cyan" },
-  { code: "    name: 'Nitin Ranganath',", color: "yellow" },
+  { code: "    name: 'Md.Sujon Howlader',", color: "yellow" },
   { code: "    role: 'Full Stack Developer',", color: "yellow" },
   { code: "    bio: 'Building modern web experiences'", color: "yellow" },
   { code: "  };", color: "cyan" },
