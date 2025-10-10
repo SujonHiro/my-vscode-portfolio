@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="fixed bottom-0 w-full bg-[#121212] border-t border-slate-900 text-white flex justify-between text-sm z-50">
       <Link
-        href="#"
+        href="https://github.com/SujonHiro/my-vscode-portfolio"
         className="flex items-center space-x-1 px-2 gap-2 hover:bg-slate-600 py-1 transition-colors duration-200"
       >
         <svg
@@ -25,7 +25,7 @@ export default function Footer() {
 
       <div className="flex items-center space-x-2">
         <Link
-          href="#"
+          href="https://nextjs.org/"
           className="flex items-center px-2 gap-2 py-1 tracking-tight hover:bg-slate-600 transition-colors duration-200"
         >
           <svg
@@ -45,7 +45,7 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="#"
+          href="https://prettier.io"
           className="px-2 py-1 text-sm hover:bg-slate-600 transition-colors duration-200 inline-flex items-center gap-1"
         >
           <Check size="14" /> Prettier
