@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="fixed bottom-0 w-full bg-[#121212] border-t border-slate-900 text-white flex justify-between text-sm z-50">
+    <div className="fixed bottom-0 w-full bg-[var(--color-bg)] border-t border-[var(--color-border)] text-white flex justify-between text-sm z-50">
       <Link
         href="https://github.com/SujonHiro/my-vscode-portfolio"
         className="flex items-center space-x-1 px-2 gap-2 hover:bg-slate-600 py-1 transition-colors duration-200"

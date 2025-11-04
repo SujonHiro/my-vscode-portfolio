@@ -45,7 +45,7 @@ export default function Projects() {
         <Link
           key={project.id}
           href={project.href}
-          className="flex flex-col  sm:flex-row items-start sm:items-center gap-4 bg-zinc-900 border border-slate-700 rounded-xl overflow-hidden shadow-lg  hover:border-emerald-400  transition-shadow duration-300"
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-4 border border-slate-700 rounded-xl overflow-hidden shadow-lg  hover:border-[var(--color-accent)]  transition-shadow duration-300"
           target="_blank"
         >
           <div className="flex-shrink-0 w-full sm:w-4/12 h-48 relative">
@@ -60,7 +60,7 @@ export default function Projects() {
           {/* Text */}
           <div className="p-4 flex-1">
             <div className="flex flex-col">
-              <h2 className="text-emerald-400 text-xl font-semibold mb-2">
+              <h2 className="text-[var(--color-accent)] text-xl font-semibold mb-2">
                 {project.title}
               </h2>
               <p className="text-gray-300">{project.description}</p>

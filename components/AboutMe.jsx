@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <article className="mt-[150px] mb-20">
       <div className="flex flex-col items-center justify-start">
-        <h1 className="text-emerald-400 text-5xl font-bold text-center tracking-tight">
+        <h1 className="text-[var(--color-accent)] text-5xl font-bold text-center tracking-tight">
           Md.Sujon Howlader
         </h1>
         <p className="text-slate-400 text-lg mt-2 text-center">
@@ -23,11 +23,11 @@ export default function AboutMe() {
 
       {/* Experience */}
       <div className="mt-10 max-w-3xl mx-auto px-4 space-y-6">
-        <h2 className="text-3xl font-bold text-emerald-400 mb-4 text-center md:text-left">
+        <h2 className="text-3xl font-bold text-[var(--color-accent)] mb-4 text-center md:text-left">
           Experience
         </h2>
-        <div className="bg-slate-800/40 p-6 rounded-xl shadow-md space-y-3">
-          <h3 className="text-xl font-semibold text-emerald-400 ">
+        <div className="bg-[var(--color-card)] border border-[var(--color-border)] p-6 rounded-xl shadow-md space-y-3">
+          <h3 className="text-xl font-semibold text-[var(--color-accent)] ">
             Full Stack Developer — The Tech Resolver
           </h3>
           <p className="text-slate-100">
@@ -43,11 +43,11 @@ export default function AboutMe() {
       </div>
       {/* Education */}
       <div className="mt-10 max-w-3xl mx-auto px-4 space-y-6">
-        <h2 className="text-3xl font-bold text-emerald-400 mb-4 text-center md:text-left">
+        <h2 className="text-3xl font-bold text-[var(--color-accent)] mb-4 text-center md:text-left">
           Education
         </h2>
-        <div className="bg-slate-800/40 p-6 rounded-xl shadow-md space-y-3">
-          <h3 className="text-xl font-semibold text-emerald-400">
+        <div className="bg-[var(--color-card)] border border-[var(--color-border)] p-6 rounded-xl shadow-md space-y-3">
+          <h3 className="text-xl font-semibold text-[var(--color-accent)]">
             Bachelor of Science in Computer Science
           </h3>
           <p className="text-slate-300">Uttara University, 2022-2026</p>

@@ -4,7 +4,7 @@ export default function BlogPage() {
   return (
     <>
       <div className="flex flex-col justify-center items-center space-y-8 mt-[130px] w-full">
-        <h1 className=" text-emerald-400 text-4xl font-bold tracking-tight ">
+        <h1 className=" text-[var(--color-accent)] text-4xl font-bold tracking-tight ">
           My Blogs
         </h1>
         <p className="text-base text-pretty leading-relaxed text-slate-300 max-w-3xl text-center">

@@ -5,7 +5,6 @@ export async function getGithubProfile(username) {
   if (!response.ok) {
     throw new Error("Failed to fetch GitHub profile");
   }
-
   return response.json();
 }
 
@@ -19,6 +18,5 @@ export async function getSelectedRepos(username, repoNames = []) {
   }
 
   const repos = await res.json();
-
   return repos.filter((repo) => repoNames.includes(repo.name));
 }

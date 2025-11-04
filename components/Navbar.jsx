@@ -4,10 +4,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#121212] border-b border-slate-800 text-white px-3 py-1.5 flex items-center justify-between shadow-lg">
-      {/* 🔹 Left: Logo + Menu */}
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-bg)] border-b border-[var(--color-border)] text-white px-3 py-1.5 flex items-center justify-between shadow-lg">
       <div className="flex items-center space-x-3">
-        {/* Logo */}
         <Link href="/" className="w-6 h-6 inline-block">
           <svg fill="none" viewBox="0 0 100 100">
             <g mask="url(#vscode__a)">
@@ -27,7 +25,6 @@ export default function Navbar() {
           </svg>
         </Link>
 
-        {/* Menu List */}
         <ul className="hidden md:flex items-center space-x-2">
           {menu.map((item) => (
             <li key={item.id}>
@@ -41,21 +38,18 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Extra menu button */}
         <button className="hidden md:flex hover:bg-slate-700 p-1.5 rounded-sm transition">
           <Ellipsis size={16} />
         </button>
       </div>
 
-      {/* 🔹 Middle: Search / Title */}
       <div className="flex-1 flex justify-center px-4">
-        <button className="w-full md:w-full lg:w-2/3 border  border-slate-700 bg-[#1a1a1a] px-3 py-1.5 rounded-md text-xs md:text-sm text-slate-400 flex items-center gap-2 hover:border-slate-500 hover:text-slate-200 transition">
+        <button className="w-full md:w-full lg:w-2/3 border  border-slate-700  px-3 py-1.5 rounded-md text-xs md:text-sm text-slate-400 flex items-center gap-2 hover:border-slate-500 hover:text-slate-200 transition">
           <SearchIcon size={16} />
           Sujon Howlader — Visual Studio Code
         </button>
       </div>
 
-      {/* 🔹 Right: Window Controls */}
       <div className="hidden md:flex items-center space-x-1">
         <button className="px-3 py-1 rounded-sm hover:bg-slate-700 transition">
           <Minus size={14} />

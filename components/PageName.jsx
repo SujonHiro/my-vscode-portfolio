@@ -22,7 +22,7 @@ export default function PageName() {
   const firstThree = lastChildren.slice(0, 6);
 
   return (
-    <div className="fixed top-10 md:top-11 left-0 md:left-[25%] w-full md:w-3/4 z-30 flex gap-5 md:gap-0 overflow-x-auto  bg-[#1e1e1e] px-3 py-0.5 text-white border-b border-zinc-800">
+    <div className="fixed top-10 md:top-11 left-0 md:left-[25%] w-full md:w-3/4 z-30 flex gap-5 md:gap-0 overflow-x-auto bg-[var(--color-bg)]  px-3 py-0.5 text-white border-b border-[var(--color-border)]">
       {firstThree.map((child) => {
         const isActive = pathname === child.to;
         const IconComponent = icons[child.icon];
@@ -31,7 +31,7 @@ export default function PageName() {
             href={child.to}
             key={child.id}
             className={`cursor-pointer px-3 py-2 inline-flex gap-1 tracking-tight items-center  text-sm transition-all duration-100 ${
-              isActive ? "border-t-1 border-t-emerald-500" : ""
+              isActive ? "border-t-1 border-t-[var(--color-accent)]" : ""
             }`}
           >
             {IconComponent && <IconComponent />}

@@ -52,7 +52,9 @@ export default function Contact() {
         {/* Line 1 */}
         <div className="flex">
           <span className="w-6 text-gray-500 select-none">1</span>
-          <span className="text-pink-400 mb-1 pl-8">.social &#123;</span>
+          <span className="text-[var(--color-accent)] mb-1 pl-8">
+            .social &#123;
+          </span>
         </div>
 
         {contactInfo.map((info, index) => (
@@ -63,7 +65,7 @@ export default function Contact() {
               <span className="text-white">: </span>
               <Link
                 href={info.href}
-                className="text-amber-400 hover:underline underline-offset-3 transition-all duration-200"
+                className="text-[var(--color-accent)] hover:underline underline-offset-3 transition-all duration-200"
                 target="_blank"
                 rel="noopener"
               >

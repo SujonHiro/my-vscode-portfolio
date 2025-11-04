@@ -6,7 +6,7 @@ export default function Blog({ blog }) {
   const readingTime = Math.ceil(wordCount / 200);
 
   return (
-    <div className="bg-zinc-900 border border-zinc-700 text-white rounded-lg overflow-hidden shadow-md ">
+    <div className="bg-[var(--color-bg)] border border-zinc-700 text-white rounded-lg overflow-hidden shadow-md ">
       <div className="w-full ">
         <Image
           src={blog.image}
@@ -20,7 +20,7 @@ export default function Blog({ blog }) {
       <div className="p-4 flex flex-col gap-2">
         <Link
           href="/"
-          className="text-xl font-semibold text-emerald-400 line-clamp-1 hover:underline underline-offset-2 transition-all duration-300"
+          className="text-xl font-semibold text-[var(--color-accent)] line-clamp-1 hover:underline underline-offset-2 transition-all duration-300"
         >
           {blog.title}
         </Link>

@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PageName from "@/components/PageName";
 import Sidebar from "@/components/Sidebar";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
@@ -22,20 +23,22 @@ export default function RootLayout({ children }) {
         className={`${firaCode.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <div className="h-screen ">
-          <Navbar />
+        <ThemeProvider>
+          <div className="h-screen">
+            <Navbar />
 
-          <div>
-            <Sidebar />
-            <main className="bg-[#121212]">
-              <PageName />
-              <div className="md:ml-auto w-full md:w-3/4 px-2 relative overflow-y-auto">
-                {children}
-              </div>
-            </main>
+            <div>
+              <Sidebar />
+              <main>
+                <PageName />
+                <div className="md:ml-auto w-full md:w-3/4 px-2 relative overflow-y-auto">
+                  {children}
+                </div>
+              </main>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

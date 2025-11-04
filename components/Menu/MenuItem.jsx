@@ -23,7 +23,7 @@ export default function MenuItem({ fileFolderItem, depth = 0 }) {
     <>
       {fileFolderItem.type === "folder" ? (
         <div
-          className="flex items-center cursor-pointer hover:bg-slate-800 py-1 "
+          className="flex items-center cursor-pointer hover:bg-slate-800 py-1"
           style={{ paddingLeft: indent }}
           onClick={() => hasChildren && setIsOpen(!isOpen)}
         >
