@@ -15,7 +15,7 @@ const themes = [
   },
 ];
 export default function ThemeCard() {
-  const { theme, setTheme } = use(ThemeContext);
+  const { setTheme, theme } = use(ThemeContext);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
       {themes.map((t) => (
@@ -39,10 +39,13 @@ export default function ThemeCard() {
             <button
               onClick={() => setTheme(t.id)}
               className={cn(
-                "mt-2 bg-[var(--color-accent)] py-1 cursor-pointer rounded-md text-white text-center w-full"
+                "mt-2  py-1 cursor-pointer rounded-md text-white text-center w-full",
+                theme === t.id
+                  ? "bg-[var(--color-accent)]"
+                  : "bg-gray-700 hover:bg-gray-600"
               )}
             >
-              Set Theme
+              {theme === t.id ? "Selected" : "Select Theme"}
             </button>
           </div>
         </div>

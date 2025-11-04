@@ -5,6 +5,7 @@ import Sidebar from "@/components/Sidebar";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
+import { themeScript } from "./theme-script";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code-sans",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         className={`${firaCode.variable} antialiased`}
         suppressHydrationWarning={true}
       >
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <ThemeProvider>
           <div className="h-screen">
             <Navbar />
