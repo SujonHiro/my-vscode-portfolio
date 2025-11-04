@@ -28,12 +28,9 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center space-x-2">
           {menu.map((item) => (
             <li key={item.id}>
-              <Link
-                href={item.href}
-                className="text-sm font-medium hover:bg-slate-700 px-2 py-1 rounded-sm transition"
-              >
+              <div className="text-sm font-medium hover:bg-slate-700 px-2 py-1 rounded-sm transition">
                 {item.name}
-              </Link>
+              </div>
             </li>
           ))}
         </ul>
